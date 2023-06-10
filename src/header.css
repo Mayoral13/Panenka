@@ -22,8 +22,8 @@ body {
   
   .hamburger {
     display: inline-block;
-    width: 25px;
-    height: 20px;
+    width: 30px;
+    height: 15px;
     cursor: pointer;
     position: relative;
   }
