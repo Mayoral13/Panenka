@@ -7,7 +7,7 @@ const Header = ()=> {
 
   return (
     <div className="container-fluid d-flex align-items-center" style={{backgroundColor:'#191b1d'}}>
-      <div className="row justify-content-between m-3 w-100">
+      <div className="row justify-content-between m-4 w-100">
         <div className="nav">
           <header style={{backgroundColor:'#191b1d'}}>
             <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleSidebar}>
