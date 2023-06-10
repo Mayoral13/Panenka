@@ -2,6 +2,11 @@ import { createContext, useState } from "react";
 const Context = createContext()
 const ContextProvider = ({children})=>{
     const [isOpen, setIsOpen] = useState(false);
+    const [showDropdown, setShowDropdown] = useState(false);
+
+    const handleClick = () => {
+      setShowDropdown(!showDropdown);
+    };
 
     
   const toggleSidebar = () => {
@@ -14,7 +19,7 @@ const ContextProvider = ({children})=>{
 
 
     return(
-        <Context.Provider value={{isOpen, toggleSidebar, closeSidebar}}>
+        <Context.Provider value={{isOpen, toggleSidebar, closeSidebar, showDropdown, handleClick}}>
             {children}
         </Context.Provider>
     )
