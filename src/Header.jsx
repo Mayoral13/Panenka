@@ -19,12 +19,7 @@ const Header = ()=> {
           <h3 className="p-2">PLAYER MARKET</h3>
         </div>
       </div>
-  
-      <div className="balance d-flex m-4" style={{ marginLeft: 'auto' }}>
-      <h4 className="me-1">Balance:</h4>
-        <h4>1700</h4>
-      </div>
-  
+      
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <nav>
           <ul>

@@ -1,0 +1,215 @@
+[
+    {
+        "id": "1",
+        "name": "Alisson Becker",
+        "price": "100",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "gk"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Ederson",
+        "price": "100",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "gk"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Tyrell Malacia",
+        "price": "150",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "lb",
+            "lwb"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Virgil Van Dijk",
+        "price": "200",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cb"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "William Saliba",
+        "price": "200",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cb"
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Fikayo Tomori",
+        "price": "200",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cb"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Joao Cancelo",
+        "price": "150",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "rb",
+            "rwb"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "David Alaba",
+        "price": "250",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cb",
+            "rb",
+            "lb",
+            "rwb",
+            "lwb"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Kevin De Bruyne",
+        "price": "300",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cm",
+            "am"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Bruno Fernandes",
+        "price": "300",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cm",
+            "am"
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Paul Pogba",
+        "price": "300",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cm"
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Jude Bellingham",
+        "price": "300",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cm"
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Casemiro",
+        "price": "300",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cm",
+            "dm"
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Rodri",
+        "price": "300",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "cm",
+            "dm"
+        ]
+    },
+    {
+        "id": "15",
+        "name": "Erling Haaland",
+        "price": "400",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "st"
+        ]
+    },
+    {
+        "id": "16",
+        "name": "Harry Kane",
+        "price": "400",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "st",
+            "cf"
+        ]
+    },
+    {
+        "id": "17",
+        "name": "Marcus Rashford",
+        "price": "400",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "lw",
+            "lm",
+            "st"
+        ]
+    },
+    {
+        "id": "18",
+        "name": "Lionel Messi",
+        "price": "400",
+        "points": "150",
+        "loan": false,
+        "selected": false,
+        "positions": [
+            "rw",
+            "cf",
+            "rm"
+        ]
+    }
+]
