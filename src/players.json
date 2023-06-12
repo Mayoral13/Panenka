@@ -6,8 +6,9 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Alisson.png",
         "positions": [
-            "gk"
+            "GK"
         ]
     },
     {
@@ -17,8 +18,9 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Ederson.png",
         "positions": [
-            "gk"
+            "GK"
         ]
     },
     {
@@ -28,9 +30,10 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Malacia.png",
         "positions": [
-            "lb",
-            "lwb"
+            "LB",",",
+            "LWB"
         ]
     },
     {
@@ -40,8 +43,9 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/VanDijk.png",
         "positions": [
-            "cb"
+            "CB"
         ]
     },
     {
@@ -51,8 +55,9 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Saliba.png",
         "positions": [
-            "cb"
+            "CB"
         ]
     },
     {
@@ -62,8 +67,9 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Tomori.png",
         "positions": [
-            "cb"
+            "CB"
         ]
     },
     {
@@ -73,9 +79,10 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Cancelo.png",
         "positions": [
-            "rb",
-            "rwb"
+            "RB",",",
+            "RWB"
         ]
     },
     {
@@ -85,12 +92,13 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Alaba.png",
         "positions": [
-            "cb",
-            "rb",
-            "lb",
-            "rwb",
-            "lwb"
+            "CB",",",
+            "RB",",",
+            "LB",",",
+            "RWB",",",
+            "LWB"
         ]
     },
     {
@@ -100,9 +108,10 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/DeBruyne.png",
         "positions": [
-            "cm",
-            "am"
+            "CM",",",
+            "AM"
         ]
     },
     {
@@ -112,9 +121,10 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Fernandes.png",
         "positions": [
-            "cm",
-            "am"
+            "CM",",",
+            "AM"
         ]
     },
     {
@@ -124,8 +134,9 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Pogba.png",
         "positions": [
-            "cm"
+            "CM"
         ]
     },
     {
@@ -135,8 +146,9 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Bellingham.png",
         "positions": [
-            "cm"
+            "CM"
         ]
     },
     {
@@ -146,9 +158,10 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Casemiro.png",
         "positions": [
-            "cm",
-            "dm"
+            "CM",",",
+            "DM"
         ]
     },
     {
@@ -158,9 +171,10 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Rodri.png",
         "positions": [
-            "cm",
-            "dm"
+            "CM",",",
+            "DM"
         ]
     },
     {
@@ -170,8 +184,9 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Haaland.png",
         "positions": [
-            "st"
+            "ST"
         ]
     },
     {
@@ -181,9 +196,10 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Kane.png",
         "positions": [
-            "st",
-            "cf"
+            "ST",",",
+            "CF"
         ]
     },
     {
@@ -193,10 +209,11 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Rashford.png",
         "positions": [
-            "lw",
-            "lm",
-            "st"
+            "LW",",",
+            "LM",",",
+            "ST"
         ]
     },
     {
@@ -206,10 +223,11 @@
         "points": "150",
         "loan": false,
         "selected": false,
+        "image":"./src/PlayerFaces/Messi.png",
         "positions": [
-            "rw",
-            "cf",
-            "rm"
+            "RW",",",
+            "CF",",",
+            "RM"
         ]
     }
 ]
