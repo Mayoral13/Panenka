@@ -1,0 +1,233 @@
+ [
+    {
+        "id": "1",
+        "name": "Alisson Becker",
+        "price": "100",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Alisson.png",
+        "positions": [
+            "GK"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Ederson",
+        "price": "100",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Ederson.png",
+        "positions": [
+            "GK"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Tyrell Malacia",
+        "price": "150",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Malacia.png",
+        "positions": [
+            "LB",",",
+            "LWB"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Virgil Van Dijk",
+        "price": "200",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/VanDijk.png",
+        "positions": [
+            "CB"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "William Saliba",
+        "price": "200",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Saliba.png",
+        "positions": [
+            "CB"
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Fikayo Tomori",
+        "price": "200",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Tomori.png",
+        "positions": [
+            "CB"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Joao Cancelo",
+        "price": "150",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Cancelo.png",
+        "positions": [
+            "RB",",",
+            "RWB"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "David Alaba",
+        "price": "250",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Alaba.png",
+        "positions": [
+            "CB",",",
+            "RB",",",
+            "LB",",",
+            "RWB",",",
+            "LWB"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Kevin De Bruyne",
+        "price": "300",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/DeBruyne.png",
+        "positions": [
+            "CM",",",
+            "AM"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Bruno Fernandes",
+        "price": "300",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Fernandes.png",
+        "positions": [
+            "CM",",",
+            "AM"
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Paul Pogba",
+        "price": "300",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Pogba.png",
+        "positions": [
+            "CM"
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Jude Bellingham",
+        "price": "300",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Bellingham.png",
+        "positions": [
+            "CM"
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Casemiro",
+        "price": "300",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Casemiro.png",
+        "positions": [
+            "CM",",",
+            "DM"
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Rodri",
+        "price": "300",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Rodri.png",
+        "positions": [
+            "CM",",",
+            "DM"
+        ]
+    },
+    {
+        "id": "15",
+        "name": "Erling Haaland",
+        "price": "400",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Haaland.png",
+        "positions": [
+            "ST"
+        ]
+    },
+    {
+        "id": "16",
+        "name": "Harry Kane",
+        "price": "400",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Kane.png",
+        "positions": [
+            "ST",",",
+            "CF"
+        ]
+    },
+    {
+        "id": "17",
+        "name": "Marcus Rashford",
+        "price": "400",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Rashford.png",
+        "positions": [
+            "LW",",",
+            "LM",",",
+            "ST"
+        ]
+    },
+    {
+        "id": "18",
+        "name": "Lionel Messi",
+        "price": "400",
+        "points": "150",
+        "loan": "false",
+        "selected": "false",
+        "image":"./src/images/Messi.png",
+        "positions": [
+            "RW",",",
+            "CF",",",
+            "RM"
+        ]
+    }
+]

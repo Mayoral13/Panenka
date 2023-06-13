@@ -1,21 +1,11 @@
 import './App.css'
-import Header from './Header'
-import Position from './Position'
-import Players from './Players'
+import MySquad from './pages/MySquad'
 
 function App() {
-  
-  return (
-    <main className='flex-column' style={{backgroundColor:'#191b1d'}}>
-<Header/>
-<Position/>
-<Players/>
-    </main>
-
-
-
-   
+  return(
+    <MySquad/>
   )
+
 }
 
 export default App

@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { Context } from "./Context"
+import { Context } from "../Context"
 const Players = ()=>{
   const {Players} = useContext(Context)
 return(

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "./Context";
+import { Context } from "../Context";
 const Position = ()=>{
   const {Goalkeepers, FetchPlayers, Defenders, Midfielders, Attackers} = useContext(Context)
     return (
