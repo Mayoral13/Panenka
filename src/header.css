@@ -42,6 +42,16 @@ body {
     background-color: green;
   }
 
+  .sell{
+    padding: 5px 25px;
+    border-radius: 10px;
+  }
+
+  .sell:hover{
+    background-color: red;
+  }
+
+
  
   
   .hamburger {

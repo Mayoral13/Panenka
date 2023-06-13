@@ -7,9 +7,6 @@ return(
 
     <main className="container justify-content-center align-items-center mt-4">
         <div className="m-2 d-flex justify-content-between">
-        <h4 className="mb-4">
-        SQUAD VALUE : 70000
-        </h4>
       
         
         </div>
@@ -28,14 +25,18 @@ return(
           <div className="card-body">
             <div className="mb-3">
               <h5 className="card-title d-flex">Name: {player.name}</h5>
-              <h5 className="card-title d-flex">Price: {player.price}</h5>
-              <h5 className="card-title d-flex">Points: {player.points}</h5>
-              <h5 className="card-title d-flex">Positions: {player.positions}</h5>
+              { player.positions.length === 1 ?(
+              <h5 className="card-title d-flex">Position: {player.positions}</h5>):(
+                <h5 className="card-title d-flex">Positions: {player.positions}</h5>
+              )
+}
             </div>
-            <div className="d-flex justify-content-center mt-1">
-                {/* <button className="sell">SELL</button> */}
-                <button className ="buy">BUY</button>
-            </div>
+            {/* <div className="d-flex justify-content-center mt-1">
+  
+                  player.selected === "false" ?(
+                <button id={player.id} onClick={AddPlayer} className ="buy">Add To Squad</button>)
+                :(<button id={player.id} onClick={RemovePlayer} className ="sell">Remove</button>)
+            </div> */}
           </div>
         </div>
     

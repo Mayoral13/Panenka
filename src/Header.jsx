@@ -16,7 +16,7 @@ const Header = ()=> {
               <div className="line"></div>
             </div>
           </header>
-          <h3 className="p-2">PLAYER MARKET</h3>
+          <h3 className="p-2">MY SQUAD</h3>
         </div>
       </div>
       
