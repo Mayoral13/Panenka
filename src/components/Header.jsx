@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { Context } from '../Context';
+import { Link } from 'react-router-dom';
 import './header.css';
 
 const Header = () => {
@@ -19,7 +20,7 @@ const { dropdownRef, toggleDropdown, handleOptionClick, isOpen} = useContext(Con
             {isOpen && (
               <div className="dropdown-content" ref={dropdownRef}>
                 {/* Dropdown Content */}
-                <a href="#" onClick={handleOptionClick}>Option 1</a>
+                <Link style={{color:'white'}} onClick={handleOptionClick} to = "/Team">MY TEAM</Link>  
               </div>
             )}
           </div>
