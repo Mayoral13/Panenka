@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { Context } from "../Context";
 const Position = ()=>{
-  const {Goalkeepers, FetchPlayers, Defenders, Midfielders, Attackers} = useContext(Context)
+  const {Goalkeepers, AllPlayers, Defenders, Midfielders, Attackers} = useContext(Context)
     return (
         <div className="container mt-4">
           <div className="row justify-content-evenly">
             <div className="col-auto me-4">
               <div className="list-group">
-                <p onClick={FetchPlayers} className="Headings">ALL PLAYERS</p>
+                <p onClick={AllPlayers} className="Headings">ALL PLAYERS</p>
               </div>
             </div>
             <div className="col-auto">
