@@ -1,12 +1,26 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, useRef } from "react";
 const Context = createContext()
 const ContextProvider = ({children})=>{
     const [Players, SetPlayers] = useState(JSON.parse(localStorage.getItem("Data")) || []);
     const [isOpen, setIsOpen] = useState(false);
     const [Data, SetData] = useState(JSON.parse(localStorage.getItem("Data")) || []);
     const [Rendered, isRendered] = useState(false)
+    const dropdownRef = useRef(null);
 
+    const toggleDropdown = () => {
+      setIsOpen((prevState) => !prevState);
+    };
   
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    const handleOptionClick = () => {
+      setIsOpen(false);
+      console.log("WORKS")
+    };
 
     const FetchPlayers = async ()=>{
     try {
@@ -60,7 +74,6 @@ const ContextProvider = ({children})=>{
     // }
 
 
-
     const Goalkeepers = ()=>{
       const players = Data
       const filtered = players.filter(player => player.positions.includes("GK"));
@@ -92,13 +105,7 @@ const ContextProvider = ({children})=>{
         SetPlayers(filteredPlayers)
       
     }
-    const toggleSidebar = () => {
-      setIsOpen(!isOpen);
-    };
-  
-    const closeSidebar = () => {
-      setIsOpen(false);
-    };
+   
   useEffect(()=>{
     FetchPlayers();
   },[])
@@ -112,9 +119,18 @@ useEffect(() => {
 },[])
 
 
+useEffect(() => {
+  document.addEventListener('mousedown', handleClickOutside);
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside);
+  };
+},[]);
+
+
 
 return(
-  <Context.Provider value={{isOpen, toggleSidebar, closeSidebar, Players, Goalkeepers, Defenders, Midfielders, Attackers, AllPlayers, Rendered}}>
+  <Context.Provider value={{isOpen, Players, Goalkeepers, Defenders, Midfielders, Attackers,
+   AllPlayers, Rendered, dropdownRef, toggleDropdown, handleClickOutside, handleOptionClick}}>
       {children}
   </Context.Provider>
 )
