@@ -3,13 +3,26 @@ const Context = createContext()
 const ContextProvider = ({children})=>{
     const [Players, SetPlayers] = useState(JSON.parse(localStorage.getItem("Data")) || []);
     const [isOpen, setIsOpen] = useState(false);
+    const [formationOpen, setformationOpen] = useState(false);
     const [Data, SetData] = useState(JSON.parse(localStorage.getItem("Data")) || []);
     const [Rendered, isRendered] = useState(false)
     const dropdownRef = useRef(null);
+    const [PageStatus, setPageStatus] = useState('MY SQUAD')
+    const [Role,setRole] = useState('ALL PLAYERS');
 
     const toggleDropdown = () => {
       setIsOpen((prevState) => !prevState);
     };
+
+    const formationDropdown = () => {
+      setformationOpen((prevState) => !prevState);
+      
+    };
+
+    const handleFormation = (e) =>{
+      console.log(e.target.innerHTML)
+      formationDropdown();
+    }
   
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -17,9 +30,10 @@ const ContextProvider = ({children})=>{
       }
     };
 
-    const handleOptionClick = () => {
+    const handleOptionClick = (e) => {
+      setPageStatus(e.target.innerHTML)
       setIsOpen(false);
-      console.log("WORKS")
+      console.log(PageStatus)
     };
 
     const FetchPlayers = async ()=>{
@@ -40,6 +54,7 @@ const ContextProvider = ({children})=>{
     const AllPlayers = ()=>{
       const players = Data;
       SetPlayers(players);
+      setRole("ALL PLAYERS")
     }
 
     // const AddPlayer = (e)=>{
@@ -78,6 +93,7 @@ const ContextProvider = ({children})=>{
       const players = Data
       const filtered = players.filter(player => player.positions.includes("GK"));
       SetPlayers(filtered)
+      setRole("GOALKEEPERS")
       }
   
     const Defenders = () =>{
@@ -87,6 +103,7 @@ const ContextProvider = ({children})=>{
         return positions.includes("CB") || positions.includes("RB") || positions.includes("LB") || positions.includes("LWB") || positions.includes("RWB");
         });
         SetPlayers(filteredPlayers)
+        setRole("DEFENDERS")
     };
     const Midfielders = () =>{
       const players = Data
@@ -95,6 +112,7 @@ const ContextProvider = ({children})=>{
       return positions.includes("CM") || positions.includes("RM") || positions.includes("LM") || positions.includes("AM") ||positions.includes("DM");
       });
       SetPlayers(filteredPlayers)
+      setRole("MIDFIELDERS")
     };
     const Attackers = () =>{
       const players = Data
@@ -103,6 +121,7 @@ const ContextProvider = ({children})=>{
       return positions.includes("ST") || positions.includes("RW") || positions.includes("LW") || positions.includes("CF");
         });
         SetPlayers(filteredPlayers)
+        setRole("ATTACKERS")
       
     }
    
@@ -130,7 +149,8 @@ useEffect(() => {
 
 return(
   <Context.Provider value={{isOpen, Players, Goalkeepers, Defenders, Midfielders, Attackers,
-   AllPlayers, Rendered, dropdownRef, toggleDropdown, handleClickOutside, handleOptionClick}}>
+   AllPlayers, Rendered, dropdownRef, toggleDropdown, handleClickOutside, handleOptionClick,
+   PageStatus, Role, formationOpen, formationDropdown, handleFormation}}>
       {children}
   </Context.Provider>
 )
