@@ -34,10 +34,16 @@ const Pitch = () => {
   const renderPlayerImages = () => {
     const players = [
       { x: 50, y: 18, image: './src/images/placeholder.png' }, //GK
-      { x: 27, y: 34, image: './src/images/placeholder.png' },
-      { x: 73, y: 34, image: './src/images/placeholder.png' },
-      { x: 73, y: 34, image: './src/images/placeholder.png' },
-      { x: 73, y: 34, image: './src/images/placeholder.png' },
+      { x: 26, y: 34, image: './src/images/placeholder.png' }, //LB
+      { x: 42, y: 34, image: './src/images/placeholder.png' }, //CB1
+      { x: 58, y: 34, image: './src/images/placeholder.png' }, //CB2
+      { x: 74, y: 34, image: './src/images/placeholder.png' }, //RB
+      { x: 22, y: 60, image: './src/images/placeholder.png' }, //LM
+      { x: 40.67, y: 60, image: './src/images/placeholder.png' }, //CM1
+      { x: 59.33, y: 60, image: './src/images/placeholder.png' }, //CM2
+      { x: 78, y: 60, image: './src/images/placeholder.png' }, //RM
+      { x: 40, y: 84, image: './src/images/placeholder.png' }, //ST1
+      { x: 59.5, y: 84, image: './src/images/placeholder.png' }, //ST2
       // Add more players with their respective x, y coordinates and image URLs
     ];
 
