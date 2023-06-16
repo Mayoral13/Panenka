@@ -20,7 +20,7 @@ const Formations = () => {
         </svg>
       </h3>
       {formationOpen && (
-        <div className="dropdown-content" style={{ backgroundColor: 'black' }}>
+        <div className="formation-content" style={{ backgroundColor: 'black' }}>
           <ul className="formation-list d-flex" style={{ listStyle: 'none', padding: 0 }}>
             <li
               onClick={handleFormation}

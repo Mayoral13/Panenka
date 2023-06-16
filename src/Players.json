@@ -2,9 +2,6 @@
     {
         "id": "1",
         "name": "Alisson Becker",
-        "price": "100",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Alisson.png",
         "positions": [
@@ -14,9 +11,6 @@
     {
         "id": "2",
         "name": "Ederson",
-        "price": "100",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Ederson.png",
         "positions": [
@@ -26,9 +20,6 @@
     {
         "id": "3",
         "name": "Tyrell Malacia",
-        "price": "150",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Malacia.png",
         "positions": [
@@ -39,9 +30,6 @@
     {
         "id": "4",
         "name": "Virgil Van Dijk",
-        "price": "200",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/VanDijk.png",
         "positions": [
@@ -51,9 +39,6 @@
     {
         "id": "5",
         "name": "William Saliba",
-        "price": "200",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Saliba.png",
         "positions": [
@@ -63,9 +48,6 @@
     {
         "id": "6",
         "name": "Fikayo Tomori",
-        "price": "200",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Tomori.png",
         "positions": [
@@ -75,9 +57,6 @@
     {
         "id": "7",
         "name": "Joao Cancelo",
-        "price": "150",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Cancelo.png",
         "positions": [
@@ -88,9 +67,6 @@
     {
         "id": "8",
         "name": "David Alaba",
-        "price": "250",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Alaba.png",
         "positions": [
@@ -102,9 +78,6 @@
     {
         "id": "9",
         "name": "Kevin De Bruyne",
-        "price": "300",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/DeBruyne.png",
         "positions": [
@@ -115,9 +88,6 @@
     {
         "id": "10",
         "name": "Bruno Fernandes",
-        "price": "300",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Fernandes.png",
         "positions": [
@@ -128,9 +98,6 @@
     {
         "id": "11",
         "name": "Paul Pogba",
-        "price": "300",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Pogba.png",
         "positions": [
@@ -140,9 +107,6 @@
     {
         "id": "12",
         "name": "Jude Bellingham",
-        "price": "300",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Bellingham.png",
         "positions": [
@@ -152,9 +116,6 @@
     {
         "id": "13",
         "name": "Casemiro",
-        "price": "300",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Casemiro.png",
         "positions": [
@@ -165,9 +126,6 @@
     {
         "id": "14",
         "name": "Rodri",
-        "price": "300",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Rodri.png",
         "positions": [
@@ -178,9 +136,6 @@
     {
         "id": "15",
         "name": "Erling Haaland",
-        "price": "400",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Haaland.png",
         "positions": [
@@ -190,9 +145,6 @@
     {
         "id": "16",
         "name": "Harry Kane",
-        "price": "400",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Kane.png",
         "positions": [
@@ -203,9 +155,6 @@
     {
         "id": "17",
         "name": "Marcus Rashford",
-        "price": "400",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Rashford.png",
         "positions": [
@@ -217,9 +166,6 @@
     {
         "id": "18",
         "name": "Lionel Messi",
-        "price": "400",
-        "points": "150",
-        "loan": "false",
         "selected": "false",
         "image":"./src/images/Messi.png",
         "positions": [
