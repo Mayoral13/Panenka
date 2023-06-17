@@ -34,18 +34,20 @@ const Pitch = () => {
   const renderPlayerImages = () => {
     const players = [
       { x: 50, y: 18, image: './src/images/placeholder.png' }, //GK
-      { x: 26, y: 34, image: './src/images/placeholder.png' }, //LB
-      { x: 42, y: 34, image: './src/images/placeholder.png' }, //CB1
-      { x: 58, y: 34, image: './src/images/placeholder.png' }, //CB2
-      { x: 74, y: 34, image: './src/images/placeholder.png' }, //RB
-      { x: 22, y: 60, image: './src/images/placeholder.png' }, //LM
-      { x: 40.67, y: 60, image: './src/images/placeholder.png' }, //CM1
-      { x: 59.33, y: 60, image: './src/images/placeholder.png' }, //CM2
-      { x: 78, y: 60, image: './src/images/placeholder.png' }, //RM
-      { x: 40, y: 84, image: './src/images/placeholder.png' }, //ST1
-      { x: 59.5, y: 84, image: './src/images/placeholder.png' }, //ST2
+      { x: 32, y: 34, image: './src/images/placeholder.png' }, //CB1
+      { x: 50, y: 34, image: './src/images/placeholder.png' }, //CB2
+      { x: 68, y: 34, image: './src/images/placeholder.png' }, //CB3
+      { x: 23, y: 54, image: './src/images/placeholder.png' }, //LWB
+      { x: 36.3, y: 54, image: './src/images/placeholder.png' }, //CM1
+      { x: 50, y: 54, image: './src/images/placeholder.png' }, //CM2
+      { x: 64, y: 54, image: './src/images/placeholder.png' }, //CM3
+      { x: 77, y: 54, image: './src/images/placeholder.png' }, //RWB
+      { x: 40, y: 77, image: './src/images/placeholder.png' }, //ST1
+      { x: 59.5, y: 77, image: './src/images/placeholder.png' }, //ST2
       // Add more players with their respective x, y coordinates and image URLs
     ];
+
+
 
     const calculateSize = (size) => {
       return (size * pitchWidth) / 100; // Convert the percentage size to pixels based on pitch width
