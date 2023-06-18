@@ -15,9 +15,6 @@ const ContextProvider = ({children})=>{
     
     const [Formation,setFormation] = useState(formation442)
 
-    const changeFormation = (e)=>{
-      console.log(e.target.value)
-    }
 
 
     const toggleDropdown = () => {
@@ -30,8 +27,39 @@ const ContextProvider = ({children})=>{
     };
 
     const handleFormation = (e) =>{
-      console.log(e.target.innerHTML)
-      formationDropdown();
+      // 4331 = 433FLAT
+      // 4332 = 433DM
+      // 4333 = 433AM
+      const value = e.target.value;
+      if(value === 442){
+        setFormation(formation442)
+      }
+      if(value === 4331){
+        setFormation(formation433)
+      }
+
+      if(value === 4332){
+        setFormation(formation433DM)
+      }
+
+      if(value === 4333){
+        setFormation(formation433AM)
+      }
+
+
+      if(value === 41212){
+        setFormation(formation41212CF)
+      }
+
+      if(value === 343){
+        setFormation(formation343)
+      }
+
+      if(value === 352){
+        setFormation(formation352)
+      }
+      console.log(value)
+      formationDropdown(); 
     }
   
     const handleClickOutside = (event) => {
@@ -161,7 +189,7 @@ return(
   <Context.Provider value={{isOpen, Players, Goalkeepers, Defenders, Midfielders, Attackers,
    AllPlayers, Rendered, dropdownRef, toggleDropdown, handleClickOutside, handleOptionClick,
    PageStatus, Role, formationOpen, formationDropdown, handleFormation,
-    Formation, changeFormation}}>
+    Formation}}>
       {children}
   </Context.Provider>
 )

@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Context } from '../Context';
 
 const Formations = () => {
-  const { formationDropdown, formationOpen, handleFormation, changeFormation } = useContext(Context);
+  const { formationDropdown, formationOpen, handleFormation } = useContext(Context);
 
   return (
     <div className='d-flex align-items-center'>
@@ -22,47 +22,47 @@ const Formations = () => {
       {formationOpen && (
         <div className="formation-content" style={{ backgroundColor: 'black' }}>
           <ul className="formation-list d-flex" style={{ listStyle: 'none', padding: 0 }}>
-            <li
+            <li value={'442'}
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
               4-4-2
             </li>
-            <li value={'433'}
+            <li value={'4331'}
               onClick={handleFormation}
               style={{ color: 'white',  borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
               4-3-3 FLAT
             </li>
 
-            <li
+            <li value={'4332'}
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
               4-3-3 DM
             </li>
 
-            <li
+            <li value={'4333'}
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
               4-3-3 AM
             </li>
 
-            <li
+            <li value={'41212CF'}
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
               4-1-2-1-2 CF
             </li>
 
-            <li
+            <li value={'343'}
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
               3-4-3
             </li>
-            <li
+            <li value={'352'}
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
