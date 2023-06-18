@@ -1,4 +1,7 @@
 import { createContext, useState, useEffect, useRef } from "react";
+import { formation343, formation352, formation41212CF, formation433, formation433AM,
+  formation433DM, formation442 } from "./components/AllFormations";
+
 const Context = createContext()
 const ContextProvider = ({children})=>{
     const [Players, SetPlayers] = useState(JSON.parse(localStorage.getItem("Data")) || []);
@@ -9,6 +12,13 @@ const ContextProvider = ({children})=>{
     const dropdownRef = useRef(null);
     const [PageStatus, setPageStatus] = useState('MY SQUAD')
     const [Role,setRole] = useState('ALL PLAYERS');
+    
+    const [Formation,setFormation] = useState(formation442)
+
+    const changeFormation = (e)=>{
+      console.log(e.target.value)
+    }
+
 
     const toggleDropdown = () => {
       setIsOpen((prevState) => !prevState);
@@ -150,7 +160,8 @@ useEffect(() => {
 return(
   <Context.Provider value={{isOpen, Players, Goalkeepers, Defenders, Midfielders, Attackers,
    AllPlayers, Rendered, dropdownRef, toggleDropdown, handleClickOutside, handleOptionClick,
-   PageStatus, Role, formationOpen, formationDropdown, handleFormation}}>
+   PageStatus, Role, formationOpen, formationDropdown, handleFormation,
+    Formation, changeFormation}}>
       {children}
   </Context.Provider>
 )

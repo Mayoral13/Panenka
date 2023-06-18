@@ -1,11 +1,14 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useContext } from 'react';
 import pitch from '../images/pitch.svg';
 import Position from './Position';
 import Team from './Team';
 import Role from './Role';
 import Formations from './Formations';
+import placeholder from "../images/placeholder.png"
+import { Context } from '../Context';
 
 const Pitch = () => {
+  const {Formation} = useContext(Context)
   const pitchImageRef = useRef(null);
   const [pitchWidth, setPitchWidth] = useState(0);
   const [pitchHeight, setPitchHeight] = useState(0);
@@ -32,23 +35,6 @@ const Pitch = () => {
   }, []);
 
   const renderPlayerImages = () => {
-    const players = [
-      { x: 50, y: 18, image: './src/images/placeholder.png' }, //GK
-      { x: 32, y: 34, image: './src/images/placeholder.png' }, //CB1
-      { x: 50, y: 34, image: './src/images/placeholder.png' }, //CB2
-      { x: 68, y: 34, image: './src/images/placeholder.png' }, //CB3
-      { x: 23, y: 54, image: './src/images/placeholder.png' }, //LWB
-      { x: 36.3, y: 54, image: './src/images/placeholder.png' }, //CM1
-      { x: 50, y: 54, image: './src/images/placeholder.png' }, //CM2
-      { x: 64, y: 54, image: './src/images/placeholder.png' }, //CM3
-      { x: 77, y: 54, image: './src/images/placeholder.png' }, //RWB
-      { x: 40, y: 77, image: './src/images/placeholder.png' }, //ST1
-      { x: 59.5, y: 77, image: './src/images/placeholder.png' }, //ST2
-      // Add more players with their respective x, y coordinates and image URLs
-    ];
-
-
-
     const calculateSize = (size) => {
       return (size * pitchWidth) / 100; // Convert the percentage size to pixels based on pitch width
     };
@@ -57,11 +43,11 @@ const Pitch = () => {
       console.log('CLICKED');
     };
 
-    return players.map((player, index) => (
+    return Formation.map((player, index) => (
       <img
         onClick={handleClick}
         key={index}
-        src={player.image}
+        src={placeholder}
         width={calculateSize(7) + 'px'} // Example: 5% width of the pitch
         alt={`Player ${index + 1}`}
         style={{

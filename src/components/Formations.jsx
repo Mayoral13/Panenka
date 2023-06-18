@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Context } from '../Context';
 
 const Formations = () => {
-  const { formationDropdown, formationOpen, handleFormation } = useContext(Context);
+  const { formationDropdown, formationOpen, handleFormation, changeFormation } = useContext(Context);
 
   return (
     <div className='d-flex align-items-center'>
@@ -26,13 +26,47 @@ const Formations = () => {
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
-              442
+              4-4-2
+            </li>
+            <li value={'433'}
+              onClick={handleFormation}
+              style={{ color: 'white',  borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
+            >
+              4-3-3 FLAT
+            </li>
+
+            <li
+              onClick={handleFormation}
+              style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
+            >
+              4-3-3 DM
+            </li>
+
+            <li
+              onClick={handleFormation}
+              style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
+            >
+              4-3-3 AM
+            </li>
+
+            <li
+              onClick={handleFormation}
+              style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
+            >
+              4-1-2-1-2 CF
+            </li>
+
+            <li
+              onClick={handleFormation}
+              style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
+            >
+              3-4-3
             </li>
             <li
               onClick={handleFormation}
-              style={{ color: 'white', width: 'fit-content', cursor:'pointer' }}
+              style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
-              433
+              3-5-2
             </li>
           </ul>
         </div>
