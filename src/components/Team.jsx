@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { Context } from "../Context";
 
 const Team = () => {
-  const { Players } = useContext(Context);
+  const { Players, AddPlayer } = useContext(Context);
   const [selectedPlayer, setSelectedPlayer] = useState(null);
 
   const handleCardClick = (player) => {
@@ -12,10 +12,6 @@ const Team = () => {
     } else {
       setSelectedPlayer(player);
     }
-  };
-
-  const AddPlayer = () => {
-    console.log("ADD");
   };
 
   const RemovePlayer = () => {
@@ -56,13 +52,12 @@ const Team = () => {
                     {player.positions.length === 1 ? (
                       <h6 className="card-title d-flex">Position: {player.positions}</h6>
                     ) : (
-                      <h6 className="card-title d-flex">Positions: {player.positions}</h6>
+                      <h6 className="card-title d-flex">Positions: {player.positions.join(', ')}</h6>
                     )}
                   </div>
                   {selectedPlayer === player && (
                     <div className="d-flex justify-content-center mt-1">
-                      {/* Render your buttons here */}
-                      <button id={player.id} onClick={AddPlayer} className="buy">
+                      <button id={player.id} onClick={AddPlayer} className="buy" value={player.positions}>
                         Pick
                       </button>
                       <button id={player.id} onClick={RemovePlayer} className="sell">

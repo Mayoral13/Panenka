@@ -23,7 +23,7 @@
         "selected": "false",
         "image":"./src/images/Malacia.png",
         "positions": [
-            "LB",",",
+            "LB",
             "LWB"
         ]
     },
@@ -60,7 +60,7 @@
         "selected": "false",
         "image":"./src/images/Cancelo.png",
         "positions": [
-            "RB",",",
+            "RB",
             "RWB"
         ]
     },
@@ -70,8 +70,8 @@
         "selected": "false",
         "image":"./src/images/Alaba.png",
         "positions": [
-            "CB",",",
-            "RB",",",
+            "CB",
+            "RB",
             "LB"
         ]
     },
@@ -81,7 +81,7 @@
         "selected": "false",
         "image":"./src/images/DeBruyne.png",
         "positions": [
-            "CM",",",
+            "CM",
             "AM"
         ]
     },
@@ -91,7 +91,7 @@
         "selected": "false",
         "image":"./src/images/Fernandes.png",
         "positions": [
-            "CM",",",
+            "CM",
             "AM"
         ]
     },
@@ -119,7 +119,7 @@
         "selected": "false",
         "image":"./src/images/Casemiro.png",
         "positions": [
-            "CM",",",
+            "CM",
             "DM"
         ]
     },
@@ -129,7 +129,7 @@
         "selected": "false",
         "image":"./src/images/Rodri.png",
         "positions": [
-            "CM",",",
+            "CM",
             "DM"
         ]
     },
@@ -148,7 +148,7 @@
         "selected": "false",
         "image":"./src/images/Kane.png",
         "positions": [
-            "ST",",",
+            "ST",
             "CF"
         ]
     },
@@ -158,8 +158,8 @@
         "selected": "false",
         "image":"./src/images/Rashford.png",
         "positions": [
-            "LW",",",
-            "LM",",",
+            "LW",
+            "LM",
             "ST"
         ]
     },
@@ -169,8 +169,8 @@
         "selected": "false",
         "image":"./src/images/Messi.png",
         "positions": [
-            "RW",",",
-            "CF",",",
+            "RW",
+            "CF",
             "RM"
         ]
     }

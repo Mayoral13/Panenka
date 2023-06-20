@@ -95,20 +95,58 @@ const ContextProvider = ({children})=>{
       setRole("ALL PLAYERS")
     }
 
-    // const AddPlayer = (e)=>{
-    //   const updatedPlayers = Players.map(player => {
-    //     if (player.id === e.target.id) {
-    //       return {
-    //         ...player,
-    //         selected: "true"
-    //       };
-    //     }
-    //     return player;
-    //   });
-    //   Data = updatedPlayers;
-    //   console.log("add")
-    //   SetPlayers(updatedPlayers)
-    // }
+    const getImageById = (id) => {
+      const player = Players.find((player) => player.id === id);
+      if (player) {
+        return player.image;
+      }
+      return null; // Return null or handle the case where ID is not found
+    };
+
+    const AddPlayer = (e) => {
+      const position = e.target.value
+      console.log(position)
+      if(position.includes("GK")){
+        const id = e.target.id;
+        console.log(position)
+        let url = getImageById(id);
+        let pic = document.getElementById(`Player${1}`);
+        console.log(id);
+        pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+        pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+        pic.style.display = "block"; // Add this line to ensure element is displayed
+      }
+      if(position.includes("LB")|| position.includes("LWB")){
+        const id = e.target.id;
+        console.log(position)
+        let pic = document.getElementById(`Player${2}`);
+        console.log(id);
+        let url = getImageById(id);
+        pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+        pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+        pic.style.display = "block"; // Add this line to ensure element is displayed
+      }else{
+        console.log("ERROR")
+      } 
+
+      if(position.includes("CB")){ //src === http://localhost:5173/src/images/placeholder.png
+        const id = e.target.id; // includes=== ./src/images/Malacia.png
+        console.log(position)
+        let pic1 = document.getElementById(`Player${3}`); //3 & 4
+        let pic1 = document.getElementById(`Player${3}`); //3 & 4
+        if(pic.src === "http://localhost:5173/src/images/placeholder.png"){
+          let url = getImageById(id);
+          pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+          pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+          pic.style.display = "block"; // Add this line to ensure element is displayed
+      }
+      }if(pic.src){
+        console.log("ERROR")
+      } 
+    };
+ 
+    
+    
 
 
     // const RemovePlayer = (e)=>{
@@ -189,10 +227,11 @@ return(
   <Context.Provider value={{isOpen, Players, Goalkeepers, Defenders, Midfielders, Attackers,
    AllPlayers, Rendered, dropdownRef, toggleDropdown, handleClickOutside, handleOptionClick,
    PageStatus, Role, formationOpen, formationDropdown, handleFormation,
-    Formation}}>
+    Formation, AddPlayer}}>
       {children}
   </Context.Provider>
 )
-}
+  }
+  
 
 export {Context, ContextProvider}

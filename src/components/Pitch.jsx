@@ -39,12 +39,13 @@ const Pitch = () => {
       return (size * pitchWidth) / 100; // Convert the percentage size to pixels based on pitch width
     };
 
-    const handleClick = () => {
-      console.log('CLICKED');
+    const handleClick = (e) => {
+      console.log('CLICKED',e.target.id);
     };
 
     return Formation.map((player, index) => (
       <img
+      id={`Player${index + 1}`}
         onClick={handleClick}
         key={index}
         src={placeholder}
