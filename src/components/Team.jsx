@@ -14,10 +14,6 @@ const Team = () => {
     }
   };
 
-  const RemovePlayer = () => {
-    console.log("Remove");
-  };
-
   return (
     <main className="container justify-content-center align-items-center mt-4">
       <div className="m-2 d-flex justify-content-between"></div>
@@ -52,16 +48,13 @@ const Team = () => {
                     {player.positions.length === 1 ? (
                       <h6 className="card-title d-flex">Position: {player.positions}</h6>
                     ) : (
-                      <h6 className="card-title d-flex">Positions: {player.positions.join(', ')}</h6>
+                      <h6 className="card-title d-flex">Positions: {player.positions.join(',')}</h6>
                     )}
                   </div>
                   {selectedPlayer === player && (
                     <div className="d-flex justify-content-center mt-1">
                       <button id={player.id} onClick={AddPlayer} className="buy" value={player.positions}>
                         Pick
-                      </button>
-                      <button id={player.id} onClick={RemovePlayer} className="sell">
-                        Remove
                       </button>
                     </div>
                   )}

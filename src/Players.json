@@ -8,27 +8,18 @@
             "GK"
         ]
     },
+  
     {
         "id": "2",
-        "name": "Ederson",
-        "selected": "false",
-        "image":"./src/images/Ederson.png",
-        "positions": [
-            "GK"
-        ]
-    },
-    {
-        "id": "3",
         "name": "Tyrell Malacia",
         "selected": "false",
         "image":"./src/images/Malacia.png",
         "positions": [
-            "LB",
-            "LWB"
+            "LB"
         ]
     },
     {
-        "id": "4",
+        "id": "3",
         "name": "Virgil Van Dijk",
         "selected": "false",
         "image":"./src/images/VanDijk.png",
@@ -37,7 +28,7 @@
         ]
     },
     {
-        "id": "5",
+        "id": "4",
         "name": "William Saliba",
         "selected": "false",
         "image":"./src/images/Saliba.png",
@@ -47,24 +38,31 @@
     },
   
     {
-        "id": "6",
+        "id": "5",
         "name": "Joao Cancelo",
         "selected": "false",
         "image":"./src/images/Cancelo.png",
         "positions": [
-            "RB",
-            "RWB"
+            "RB"
         ]
     },
   
     {
-        "id": "7",
+        "id": "6",
         "name": "Kevin De Bruyne",
         "selected": "false",
         "image":"./src/images/DeBruyne.png",
         "positions": [
-            "CM",
-            "AM"
+            "CM"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Paul Pogba",
+        "selected": "false",
+        "image":"./src/images/Pogba.png",
+        "positions": [
+            "DM"
         ]
     },
     {
@@ -73,21 +71,11 @@
         "selected": "false",
         "image":"./src/images/Fernandes.png",
         "positions": [
-            "CM",
             "AM"
         ]
     },
     {
         "id": "9",
-        "name": "Paul Pogba",
-        "selected": "false",
-        "image":"./src/images/Pogba.png",
-        "positions": [
-            "CM"
-        ]
-    },
-    {
-        "id": "10",
         "name": "Erling Haaland",
         "selected": "false",
         "image":"./src/images/Haaland.png",
@@ -97,25 +85,21 @@
     },
   
     {
-        "id": "11",
+        "id": "10",
         "name": "Marcus Rashford",
         "selected": "false",
         "image":"./src/images/Rashford.png",
         "positions": [
-            "LW",
-            "LM",
-            "ST"
+            "LW"
         ]
     },
     {
-        "id": "12",
+        "id": "11",
         "name": "Lionel Messi",
         "selected": "false",
         "image":"./src/images/Messi.png",
         "positions": [
-            "RW",
-            "CF",
-            "RM"
+            "RW"
         ]
     }
 ]

@@ -27,7 +27,7 @@ return(
               <h5 className="card-title d-flex">Name: {player.name}</h5>
               { player.positions.length === 1 ?(
               <h5 className="card-title d-flex">Position: {player.positions}</h5>):(
-                <h5 className="card-title d-flex">Positions: {player.positions}</h5>
+                <h5 className="card-title d-flex">Positions: {player.positions.join(',')}</h5>
               )
 }
             </div>

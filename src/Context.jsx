@@ -12,15 +12,15 @@ const ContextProvider = ({children})=>{
     const dropdownRef = useRef(null);
     const [PageStatus, setPageStatus] = useState('MY SQUAD')
     const [Role,setRole] = useState('ALL PLAYERS');
-    const [Image, setImage] = useState({})
+    // const [Image, setImage] = useState({})
     const [Formation,setFormation] = useState(formation442)
  
-    const UpdateImage = (id,src)=>{
-      setImage((prevMap)=>({
-        ...prevMap,[id]:src
-      }))
+    // const UpdateImage = (id,src)=>{
+    //   setImage((prevMap)=>({
+    //     ...prevMap,[id]:src
+    //   }))
 
-    }
+    // }
 
 
     const toggleDropdown = () => {
@@ -112,20 +112,16 @@ const ContextProvider = ({children})=>{
     const AddPlayer = (e) => {
       const position = e.target.value
       const id = e.target.id;
-      console.log(position)
+      let url = getImageById(id);
       if(position.includes("GK")){
-        
-        console.log(position)
-        let url = getImageById(id);
         let pic = document.getElementById(`Player${1}`);
         console.log(id);
         pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
         pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
         pic.style.display = "block"; // Add this line to ensure element is displayed
-        UpdateImage(id,url)
       }
-      if(position.includes("LB")|| position.includes("LWB")){
-        console.log(position)
+
+      if(position.includes("LB")){
         let pic = document.getElementById(`Player${2}`);
         console.log(id);
         let url = getImageById(id);
@@ -133,30 +129,66 @@ const ContextProvider = ({children})=>{
         pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
         pic.style.display = "block"; // Add this line to ensure element is displayed
       }
-      if(position.includes("CB")){ //src === http://localhost:5173/src/images/placeholder.png
-         // includes=== ./src/images/Malacia.png
-         let cb = Image[id];
-         if(cb == ""){
+      if(position.includes("CB")){
+        if(id === "3"){
           let pic = document.getElementById(`Player${3}`); //3 & 4
           let url = getImageById(id);
           pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
           pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
-          pic.style.display = "block"; // Add this line to ensure element is displayed
-          UpdateImage(id,url);
-         } 
-         if(cb !=""){
-          let pic = document.getElementById(`Player${4}`); //3 & 4
-          let url = getImageById(id);
-          pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
-          pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
-          pic.style.display = "block"; // Add this line to ensure element is displayed
-          UpdateImage(id,url);
-         } 
+          pic.style.display = "block"; // Add this line to ensure element is displayed  
          
   }
-
+  if(id === "4"){
+    let pic = document.getElementById(`Player${4}`); //3 & 4
+    pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+    pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+    pic.style.display = "block"; // Add this line to ensure element is displayed  
+}
     }
-    console.log(Image)
+    if(position.includes("RB")|| position.includes("RWB")){
+      let pic = document.getElementById(`Player${5}`);
+      pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+      pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+      pic.style.display = "block"; // Add this line to ensure element is displayed
+    }
+    if(position.includes("CM")){
+      let pic = document.getElementById(`Player${6}`);
+      pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+      pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+      pic.style.display = "block"; // Add this line to ensure element is displayed
+    }
+    if(position.includes("DM")){
+      let pic = document.getElementById(`Player${7}`);
+      pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+      pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+      pic.style.display = "block"; // Add this line to ensure element is displayed
+    }
+    if(position.includes("AM")){
+      let pic = document.getElementById(`Player${8}`);
+      pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+      pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+      pic.style.display = "block"; // Add this line to ensure element is displayed
+    }
+    if(position.includes("LW")){
+      let pic = document.getElementById(`Player${9}`);
+      pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+      pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+      pic.style.display = "block"; // Add this line to ensure element is displayed
+    }
+    if(position.includes("ST")){
+      let pic = document.getElementById(`Player${10}`);
+      pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+      pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+      pic.style.display = "block"; // Add this line to ensure element is displayed
+    }
+    if(position.includes("RW")){
+      let pic = document.getElementById(`Player${11}`);
+      pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+      pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+      pic.style.display = "block"; // Add this line to ensure element is displayed
+    }
+  }
+  
 
  
     
@@ -228,14 +260,14 @@ useEffect(() => {
  isRendered(!Rendered)
 },[])
 
-useEffect(() => {
-  const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// useEffect(() => {
+//   const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-  ids.forEach(id => {
-    const src = ""
-    UpdateImage(id, src); // Update the image state with the id and src
-  });
-}, []);
+//   ids.forEach(id => {
+//     const src = ""
+//     UpdateImage(id, src); // Update the image state with the id and src
+//   });
+// }, []);
 
 
 useEffect(() => {
