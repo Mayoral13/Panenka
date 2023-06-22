@@ -74,7 +74,7 @@ const Pitch = () => {
             {renderPlayerImages()}
           </div>
         </div>
-        <div className="col-md-4" style={{ width: '300px', overflowY: 'auto', height: '500px' }}>
+        <div className="col-md-4" style={{ width: '260px', overflowY: 'auto', height: '500px' }}>
           <div className="container" style={{ border: 'white 4px solid' }}>
             <Role />
             <Team />

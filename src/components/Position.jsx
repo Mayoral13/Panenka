@@ -12,7 +12,7 @@ const Position = ()=>{
             </div>
             <div className="col-auto">
               <div className="list-group">
-                <p className="Headings" onClick={Goalkeepers}>GOALKEEPERS</p>
+                <p className="Headings" onClick={Goalkeepers}>GOALKEEPER</p>
               </div>
             </div>
             <div className="col-auto">

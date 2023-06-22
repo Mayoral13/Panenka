@@ -64,7 +64,6 @@ const ContextProvider = ({children})=>{
       if(value === 352){
         setFormation(formation352)
       }
-      console.log(value)
       formationDropdown(); 
     }
   
@@ -212,7 +211,7 @@ const ContextProvider = ({children})=>{
       const players = Data
       const filtered = players.filter(player => player.positions.includes("GK"));
       SetPlayers(filtered)
-      setRole("GOALKEEPERS")
+      setRole("GOALKEEPER")
       }
   
     const Defenders = () =>{

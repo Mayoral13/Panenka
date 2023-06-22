@@ -5,7 +5,7 @@ const Formations = () => {
   const { formationDropdown, formationOpen, handleFormation } = useContext(Context);
 
   return (
-    <div className='d-flex align-items-center'>
+    <div className='align-items-center'>
       <h3 className="p-2 dropdown-title d-flex" style={{ color: 'white' }}>
         <div>Formations</div>
         <svg
@@ -20,7 +20,7 @@ const Formations = () => {
         </svg>
       </h3>
       {formationOpen && (
-        <div className="formation-content" style={{ backgroundColor: 'black' }}>
+        <div className="formation-content" style={{ backgroundColor: 'black'}}>
           <ul className="formation-list d-flex" style={{ listStyle: 'none', padding: 0 }}>
             <li value={'442'}
               onClick={handleFormation}
@@ -32,28 +32,28 @@ const Formations = () => {
               onClick={handleFormation}
               style={{ color: 'white',  borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
-              4-3-3 FLAT
+              4-3-3 A
             </li>
 
             <li value={'4332'}
               onClick={handleFormation}
-              style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
+              style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer'}}
             >
-              4-3-3 DM
+              4-3-3 B
             </li>
 
             <li value={'4333'}
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
-              4-3-3 AM
+              4-3-3 C
             </li>
 
             <li value={'41212CF'}
               onClick={handleFormation}
               style={{ color: 'white', borderRight: '1px solid white', width: 'fit-content', cursor:'pointer' }}
             >
-              4-1-2-1-2 CF
+              4-1-2-1-2
             </li>
 
             <li value={'343'}
