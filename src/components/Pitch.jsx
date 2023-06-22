@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState, useContext } from 'react';
-import pitch from '../images/pitch.svg';
+import pitch from '/pitch.svg';
 import Position from './Position';
 import Team from './Team';
 import Role from './Role';
 import Formations from './Formations';
-import placeholder from "../images/placeholder.png"
+import placeholder from "/placeholder.png"
 import { Context } from '../Context';
 
 const Pitch = () => {

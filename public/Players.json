@@ -3,7 +3,7 @@
         "id": "1",
         "name": "Alisson Becker",
         "selected": "false",
-        "image":"./src/images/Alisson.png",
+        "image":"./Alisson.png",
         "positions": [
             "GK"
         ]
@@ -13,7 +13,7 @@
         "id": "2",
         "name": "Tyrell Malacia",
         "selected": "false",
-        "image":"./src/images/Malacia.png",
+        "image":"./Malacia.png",
         "positions": [
             "LB"
         ]
@@ -22,7 +22,7 @@
         "id": "3",
         "name": "Virgil Van Dijk",
         "selected": "false",
-        "image":"./src/images/VanDijk.png",
+        "image":"./VanDijk.png",
         "positions": [
             "CB"
         ]
@@ -31,7 +31,7 @@
         "id": "4",
         "name": "William Saliba",
         "selected": "false",
-        "image":"./src/images/Saliba.png",
+        "image":"./Saliba.png",
         "positions": [
             "CB"
         ]
@@ -41,7 +41,7 @@
         "id": "5",
         "name": "Joao Cancelo",
         "selected": "false",
-        "image":"./src/images/Cancelo.png",
+        "image":"./Cancelo.png",
         "positions": [
             "RB"
         ]
@@ -51,7 +51,7 @@
         "id": "6",
         "name": "Kevin De Bruyne",
         "selected": "false",
-        "image":"./src/images/DeBruyne.png",
+        "image":"./DeBruyne.png",
         "positions": [
             "CM"
         ]
@@ -60,7 +60,7 @@
         "id": "7",
         "name": "Paul Pogba",
         "selected": "false",
-        "image":"./src/images/Pogba.png",
+        "image":"./Pogba.png",
         "positions": [
             "DM"
         ]
@@ -69,7 +69,7 @@
         "id": "8",
         "name": "Bruno Fernandes",
         "selected": "false",
-        "image":"./src/images/Fernandes.png",
+        "image":"./Fernandes.png",
         "positions": [
             "AM"
         ]
@@ -78,7 +78,7 @@
         "id": "9",
         "name": "Erling Haaland",
         "selected": "false",
-        "image":"./src/images/Haaland.png",
+        "image":"./Haaland.png",
         "positions": [
             "ST"
         ]
@@ -88,7 +88,7 @@
         "id": "10",
         "name": "Marcus Rashford",
         "selected": "false",
-        "image":"./src/images/Rashford.png",
+        "image":"./Rashford.png",
         "positions": [
             "LW"
         ]
@@ -97,7 +97,7 @@
         "id": "11",
         "name": "Lionel Messi",
         "selected": "false",
-        "image":"./src/images/Messi.png",
+        "image":"./Messi.png",
         "positions": [
             "RW"
         ]
