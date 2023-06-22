@@ -77,7 +77,6 @@ const ContextProvider = ({children})=>{
     const handleOptionClick = (e) => {
       setPageStatus(e.target.innerHTML)
       setIsOpen(false);
-      console.log(PageStatus)
     };
 
     const FetchPlayers = async ()=>{
@@ -115,7 +114,6 @@ const ContextProvider = ({children})=>{
       let url = getImageById(id);
       if(position.includes("GK")){
         let pic = document.getElementById(`Player${1}`);
-        console.log(id);
         pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
         pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
         pic.style.display = "block"; // Add this line to ensure element is displayed
@@ -123,7 +121,6 @@ const ContextProvider = ({children})=>{
 
       if(position.includes("LB")){
         let pic = document.getElementById(`Player${2}`);
-        console.log(id);
         let url = getImageById(id);
         pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
         pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
