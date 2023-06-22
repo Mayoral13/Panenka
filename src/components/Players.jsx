@@ -11,7 +11,7 @@ return(
         
         </div>
 
-    <div style={{ height: '40%', overflowY: 'auto', overflowX:'hidden'}}>
+    <div style={{ height: '90vh', overflowY: 'auto', overflowX:'hidden'}}>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">
       {
           Players.map((player)=>(   

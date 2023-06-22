@@ -4,14 +4,15 @@ import Position from './Position';
 import Team from './Team';
 import Role from './Role';
 import Formations from './Formations';
-import placeholder from "/placeholder.png"
+import placeholder from '/placeholder.png';
 import { Context } from '../Context';
 
 const Pitch = () => {
-  const {Formation} = useContext(Context)
+  const { Formation } = useContext(Context);
   const pitchImageRef = useRef(null);
   const [pitchWidth, setPitchWidth] = useState(0);
   const [pitchHeight, setPitchHeight] = useState(0);
+  const [isPitchLoaded, setIsPitchLoaded] = useState(false);
 
   useEffect(() => {
     const updateDimensions = () => {
@@ -23,7 +24,15 @@ const Pitch = () => {
       }
     };
 
+    const handleImageLoad = () => {
+      setIsPitchLoaded(true);
+    };
+
     updateDimensions(); // Initial dimensions
+
+    const pitchImage = new Image();
+    pitchImage.src = pitch;
+    pitchImage.onload = handleImageLoad;
 
     window.addEventListener('resize', updateDimensions); // Add event listener for window resize
 
@@ -37,11 +46,13 @@ const Pitch = () => {
       return (size * pitchWidth) / 100; // Convert the percentage size to pixels based on pitch width
     };
 
-   
+    if (!isPitchLoaded) {
+      return null; // Don't render player images until the pitch image is loaded
+    }
 
     return Formation.map((player, index) => (
       <img
-      id={`Player${index + 1}`}
+        id={`Player${index + 1}`}
         key={index}
         src={placeholder}
         width={calculateSize(7) + 'px'} // Example: 5% width of the pitch
@@ -68,7 +79,7 @@ const Pitch = () => {
             <img
               src={pitch}
               alt="Pitch"
-              style={{ width: '100%', height: '90%' }}
+              style={{ width: '100%', height: '90%',transition: 'all 0.5s ease' }}
               ref={pitchImageRef}
             />
             {renderPlayerImages()}
