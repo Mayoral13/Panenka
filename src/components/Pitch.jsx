@@ -56,6 +56,7 @@ const Pitch = () => {
           position: 'absolute',
           left: `${player.x}%`,
           top: `${player.y}%`,
+          transition: `top ${1000}ms, left ${1000}ms`,
           transform: 'translate(-50%, -50%)',
         }}
       />
