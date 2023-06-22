@@ -12,9 +12,15 @@ const ContextProvider = ({children})=>{
     const dropdownRef = useRef(null);
     const [PageStatus, setPageStatus] = useState('MY SQUAD')
     const [Role,setRole] = useState('ALL PLAYERS');
-    
+    const [Image, setImage] = useState({})
     const [Formation,setFormation] = useState(formation442)
+ 
+    const UpdateImage = (id,src)=>{
+      setImage((prevMap)=>({
+        ...prevMap,[id]:src
+      }))
 
+    }
 
 
     const toggleDropdown = () => {
@@ -105,9 +111,10 @@ const ContextProvider = ({children})=>{
 
     const AddPlayer = (e) => {
       const position = e.target.value
+      const id = e.target.id;
       console.log(position)
       if(position.includes("GK")){
-        const id = e.target.id;
+        
         console.log(position)
         let url = getImageById(id);
         let pic = document.getElementById(`Player${1}`);
@@ -115,9 +122,9 @@ const ContextProvider = ({children})=>{
         pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
         pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
         pic.style.display = "block"; // Add this line to ensure element is displayed
+        UpdateImage(id,url)
       }
       if(position.includes("LB")|| position.includes("LWB")){
-        const id = e.target.id;
         console.log(position)
         let pic = document.getElementById(`Player${2}`);
         console.log(id);
@@ -125,25 +132,32 @@ const ContextProvider = ({children})=>{
         pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
         pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
         pic.style.display = "block"; // Add this line to ensure element is displayed
-      }else{
-        console.log("ERROR")
-      } 
-
+      }
       if(position.includes("CB")){ //src === http://localhost:5173/src/images/placeholder.png
-        const id = e.target.id; // includes=== ./src/images/Malacia.png
-        console.log(position)
-        let pic1 = document.getElementById(`Player${3}`); //3 & 4
-        let pic1 = document.getElementById(`Player${3}`); //3 & 4
-        if(pic.src === "http://localhost:5173/src/images/placeholder.png"){
+         // includes=== ./src/images/Malacia.png
+         let cb = Image[id];
+         if(cb == ""){
+          let pic = document.getElementById(`Player${3}`); //3 & 4
           let url = getImageById(id);
           pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
           pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
           pic.style.display = "block"; // Add this line to ensure element is displayed
-      }
-      }if(pic.src){
-        console.log("ERROR")
-      } 
-    };
+          UpdateImage(id,url);
+         } 
+         if(cb !=""){
+          let pic = document.getElementById(`Player${4}`); //3 & 4
+          let url = getImageById(id);
+          pic.style.backgroundImage = `url(${url})`; // Use abeg variable to set the background image
+          pic.style.backgroundSize = "cover"; // Add this line to ensure proper sizing
+          pic.style.display = "block"; // Add this line to ensure element is displayed
+          UpdateImage(id,url);
+         } 
+         
+  }
+
+    }
+    console.log(Image)
+
  
     
     
@@ -201,6 +215,7 @@ const ContextProvider = ({children})=>{
       
     }
    
+   
   useEffect(()=>{
     FetchPlayers();
   },[])
@@ -212,6 +227,15 @@ const ContextProvider = ({children})=>{
 useEffect(() => {
  isRendered(!Rendered)
 },[])
+
+useEffect(() => {
+  const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+  ids.forEach(id => {
+    const src = ""
+    UpdateImage(id, src); // Update the image state with the id and src
+  });
+}, []);
 
 
 useEffect(() => {
