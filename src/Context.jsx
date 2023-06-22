@@ -80,7 +80,7 @@ const ContextProvider = ({children})=>{
 
     const FetchPlayers = async ()=>{
     try {
-      const data = await fetch("./src/Players.json");
+      const data = await fetch("src/components/Players.json");
       const response = await data.json();
       const players = await response;
       SetPlayers(players)
